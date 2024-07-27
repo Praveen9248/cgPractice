@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>add game</title>
+    </head>
+    <body>
+        <h1>Add Games</h1>
+        <form id="GameForm" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Add Game">
+        </form>
+    </body>
+</html>

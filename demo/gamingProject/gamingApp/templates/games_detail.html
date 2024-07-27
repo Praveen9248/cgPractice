@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>studentApp</title>
+    </head>
+    <body>
+        <h1>game Deatils</h1>
+        <div>
+            <p>game name: {{object.game_name}}</p>
+            <p>score {{object.score}}</p>
+            <p>players: {% for c in object.players.all%}
+                {{c}}<br>
+                {% endfor %}
+            </p>
+        </div>
+    </body>
+</html>
